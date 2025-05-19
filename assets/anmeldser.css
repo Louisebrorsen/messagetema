@@ -1,0 +1,27 @@
+/* Anmeldser */
+.reviews-section{
+    margin: auto;
+    text-align: center;
+    color: var(--color-primary-dark);
+/*     background-color: var(--color-grey);
+ */    padding: auto;
+  }
+
+  .google-reviews {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm);
+    max-width: 94%;
+    margin: var(--spacing-lg) auto;
+  }
+  
+
+  @media (max-width: 1024px) {
+   
+    .google-reviews {
+      flex-direction: column;
+    }
+   
+  }

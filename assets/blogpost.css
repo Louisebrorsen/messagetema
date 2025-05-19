@@ -1,0 +1,85 @@
+/* archive-blogpost */
+
+.blog-archive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-lg);
+    padding: auto;
+    margin: auto;
+ }
+ .blog-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 3rem;
+}
+
+  
+  .blog-card img {
+    align-self: center; /* Centrerer billedet horisontalt */
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .blog-card h2 {
+    text-align: center;
+    min-height: 3em; /* Sørg for samme højde på overskriften */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .blog-card p {
+    min-height: 3em; /* Gør alle beskrivelser lige høje */
+    margin-top: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .blog-card .btn-cta {
+    align-self: center; /* Centrerer knappen horisontalt */
+    margin-top: auto; /* Sørger for at knappen er nederst på kortet */
+  }
+  
+  .blog-card:hover {
+    background-color: rgba(14, 58, 112, 0.1); /* blå overlay ved hover */  
+    transform: scale(1.03); /* Zoom ind lidt ved hover */
+  }
+  
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    align-items: stretch;
+}
+
+
+  
+  /* Tablets */
+  @media (max-width: 1024px) {
+    .blog-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Mobil */
+  @media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+  }
+  
+
+

@@ -1,0 +1,287 @@
+/* === ERHVERV BEHANDLING === */
+
+.erhverv-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.section1 {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4rem;
+    margin-bottom: 4rem;
+    align-items: baseline;
+}
+
+.section1 h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.section1 .left,
+.section1 .right {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+}
+
+/* Venstre side */
+.section1 .left h1,
+.section1 .left h3 {
+    margin-top: 0;
+}
+
+.section1 .left p {
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+/* Højre side */
+.section1 .right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+}
+
+.kontakt-information {
+    margin: 2rem;
+}
+
+/* KONTAKT INFO ELEMENTER */
+.kontakt-info {
+    margin-bottom: 0.5rem;
+}
+
+.kontakt-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: x-large;
+}
+
+.kontakt-item img {
+    max-width: 24px;
+    height: auto;
+}
+
+.kontakt-item p {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+
+.right-erhverv img {
+    max-width: 18%;
+    height: auto;
+    display: block;
+    position: absolute;
+    margin-left: 19rem;
+    margin-top: -20rem;
+    overflow: hidden;
+}
+
+.afsnit2 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    padding: 2rem;
+    margin-bottom: -4rem;
+}
+
+.blue-box-wrapper {
+    position: relative; /* Holder styr på placeringen */
+    min-height: 150px; /* Sørg for der er lidt højde at arbejde med */
+}
+
+.blue-box {
+    position: absolute;
+    bottom: 8rem;
+    right: 3rem;
+    width: 650px;
+    padding: 2rem;
+    background-color: var(--color-primary-dark);
+    color: var(--color-white) !important;
+    display: grid;
+    align-items: start;
+    justify-items: center;
+}
+/* .contact-form-wrapper {
+    padding: 0;
+    margin: 0;
+} */
+
+/* Grid layout til formularen */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+/* Fuld bredde */
+.form-group.full {
+    grid-column: 1 / -1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem 0;
+    background: none;
+    font-size: 1rem;
+    max-height: 145px;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem 0;
+    background: none;
+    font-size: 1rem;
+}
+input[type="submit"].btn-cta {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+    max-width: 10vw; /* Gør den ikke for bred */
+    margin: 0 auto; /* Centrer */
+}
+
+input[type="submit"].btn-cta:hover {
+    background-color: var(--color-primary-dark);
+    transform: scale(1.03);
+}
+
+/* Mobilvenlig version */
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.afsnit2 h1 {
+    margin-top: 0;
+    color: var(--color-white);
+}
+
+.afsnit2 ul {
+    list-style-type: disc;
+    padding-right: 8rem;
+    margin-top: 1rem;
+}
+
+.afsnit2 li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    color: var(--color-white);
+}
+
+@media (max-width: 1228px) {
+    .afsnit2 {
+        padding: 0 2rem;
+        margin: var(--spacing-md) auto;
+    }
+    .blue-box {
+        position: static; /* Gør den ikke-absolut, så den flyder med layout */
+        width: 100%; /* Fylder bredden */
+        padding: 2rem;
+        bottom: auto;
+        right: auto;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .right-erhverv img {
+        max-width: 16%;
+        height: auto;
+        display: block;
+        position: absolute;
+        margin-left: 19rem;
+        margin-top: -16rem;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 1148px) {
+    .right-erhverv img {
+        max-width: 16%;
+        height: auto;
+        display: block;
+        position: absolute;
+        margin-left: 20rem;
+        margin-top: -15rem;
+        overflow: hidden;
+    }
+}
+
+/* === RESPONSIVT === */
+@media (max-width: 915px) {
+    .section1 {
+        flex-direction: column;
+    }
+
+    .section1 .left,
+    .section1 .right {
+        flex: 1 1 100%;
+    }
+
+    .right-erhverv {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    .right-erhverv img {
+        max-width: 16%;
+        height: auto;
+        display: block;
+        position: absolute;
+        margin-left: 25rem;
+        margin-top: -17.3rem;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 668px) {
+    .right-erhverv img {
+        max-width: 16%;
+        height: auto;
+        display: block;
+        position: absolute;
+        margin-left: 25rem;
+        margin-top: -16.3rem;
+        overflow: hidden;
+    }
+}

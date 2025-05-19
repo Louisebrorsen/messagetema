@@ -1,0 +1,185 @@
+
+
+/* 🎯 Contact Form 7 styling */
+.wpcf7-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.wpcf7-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="tel"],
+.wpcf7 textarea {
+  width: 100%;
+  padding: 0.5rem 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: none;
+  font-size: 1rem;
+}
+
+.wpcf7 input[type="submit"],
+.wpcf7-form-control.wpcf7-submit {
+  background-color: var(--color-primary-dark);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.wpcf7 input[type="submit"]:hover {
+  background-color: #333;
+}
+
+/* Juster responsivt hvis nødvendigt */
+@media (max-width: 768px) {
+  .wpcf7-form {
+    gap: 1.5rem;
+  }
+}
+
+
+/* SECTIONS & WRAPPERS */
+.kontakt-sction {
+  margin: auto;
+}
+
+.contact-page {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 0 auto; /* Centrer hele containeren */
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+
+.contact-form-wrapper {
+  flex: 1 1 50%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: space-around;
+    flex-direction: column;
+}
+
+.info-wrapper {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.b-box-wrapper {
+  position: relative; /* Holder styr på placeringen */
+  min-height: 150px; /* Sørg for der er lidt højde at arbejde med */
+}
+
+/* Selve info-boksen */
+.b-box {
+  position: relative;
+  bottom: 0px;
+  right: -10rem;
+  width: 527px;
+  padding: 2rem;
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  display: grid
+;
+  align-items: start;
+  justify-items: stretch;
+}
+
+
+
+.b-box h2,
+.b-box p {
+  color: var(--color-white) !important;
+}
+
+/* KONTAKT INFO ELEMENTER */
+.kontakt-info {
+  margin-bottom: 0.5rem;
+}
+
+.kontakt-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: x-large;
+  color: var(--color-black);
+}
+
+.kontakt-item img {
+  max-width: 24px;
+  height: auto;
+}
+
+.kontakt-item p {
+  margin: 0;
+  padding: 0;
+  font-size: large;
+}
+.kontakt-item a {
+  margin: 0;
+  padding: 0;
+  font-size: large;
+  
+}
+
+/* ÅBNINGSTIDER */
+.aabnings {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.aabnings .tid-linje {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1180px) {
+  .b-box {
+      position: static; /* Gør den ikke-absolut, så den flyder med layout */
+      width: 100%; /* Fylder bredden */
+      padding: 2rem;
+      bottom: auto;
+      right: auto;
+      margin: 0 auto;
+      box-sizing: border-box;
+  }
+}
+
+/* MOBILVENLIGT */
+@media (max-width: 768px) {
+  .contact-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .b-box {
+    position: static;
+    width: 90%;
+    margin: 2rem auto 0;
+  }
+
+  .b-box-wrapper {
+    position: static;
+  }
+}
+

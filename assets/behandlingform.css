@@ -1,0 +1,77 @@
+.behandlingsformer{
+  padding: auto;
+  margin: auto;
+}
+
+/* Behandlingsform-card som flex-container */
+.behandlingsform-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Gør at alt indhold strækker sig horisontalt */
+  justify-content: flex-start; /* Sørger for at elementerne bliver justeret fra toppen */
+  text-decoration: none;
+  padding: 20px;
+  border: 1px solid transparent; /* Usynlig border indtil hover */
+  height: 100%;
+  max-height: 675px;
+  transition: transform 0.3s ease, border 0.3s ease;
+  will-change: transform;
+}
+
+/* Juster billederne horisontalt */
+.behandlingsform-card img {
+  align-self: center; /* Centrerer billedet horisontalt */
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Centrer h3 overskriften */
+.behandlingsform-card h3 {
+  text-align: center;
+}
+
+/* Juster brødteksten (p) til venstre */
+.behandlingsform-card p {
+  text-align: left;
+  margin-top: var(--spacing-sm); /* Hvis du vil have lidt afstand til overskriften */
+}
+
+/* Juster knappen */
+.behandlingsform-card .btn-cta {
+  align-self: center; /* Centrerer knappen horisontalt */
+  margin-top: auto; /* Sørger for at knappen er nederst på kortet */
+}
+
+/* Hover-effekt på hele kortet */
+.behandlingsform-card:hover {
+  background-color: rgba(14, 58, 112, 0.1); /* blå overlay ved hover */  
+  transform: scale(1.03); /* Zoom ind lidt ved hover */
+}
+
+/* Behandlingsformer Grid */
+.behandlingsformer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+  max-width: 94%;
+  
+  padding: var(--spacing-md);
+  margin: 10px;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .behandlingsformer-grid {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+  .behandlingsformer-grid {
+      grid-template-columns: 1fr;
+  }
+}

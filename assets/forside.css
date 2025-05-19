@@ -1,0 +1,59 @@
+/* Hero Section */
+.hero-sektion {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Video-wrapper */
+.hero-video-wrapper {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding-top: 45%;
+  background-color: black;
+}
+
+.hero-video-wrapper video,
+.hero-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hero content (CTA knap) */
+.hero-content {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero-video-wrapper {
+    padding-top: 55%;
+  }
+
+  .hero-content {
+    bottom: 2.5rem;
+  }
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+  .hero-video-wrapper {
+    padding-top: 65%;
+    border-radius: 0;
+  }
+
+  .hero-content {
+    bottom: 2rem;
+  }
+}

@@ -1,0 +1,39 @@
+/* === om mig side === */
+
+.ommig-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto;
+}
+
+/* === SECTION 1 === */
+.afsnit1 {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 4rem;
+    flex-wrap: nowrap;
+}
+
+.afsnit1 .left,
+.afsnit1 .right {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+}
+
+.afsnit1 .right {
+    text-align: right;
+    align-content: center;
+}
+
+.afsnit1 img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    
+}
