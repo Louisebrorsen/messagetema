@@ -19,7 +19,8 @@ Description: A custom theme for Massage & Kropsterapi Fyn
 @import url("./assets/single.css");
 @import url("./assets/klinik.css");
 @import url("./assets/ommig.css");
-/* Variables & Global Styles */
+/* Variables & Global */
+
 
 :root {
   /* Colors */
@@ -101,7 +102,7 @@ a {
   transition: color 0.3s ease;
 }
 a:hover {
-  color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .section-divider {
@@ -188,10 +189,18 @@ a:hover {
 }
 
 /* Hover-effekt */
-.btn-cta:hover {
+.btn-cta:hover,
+.small-btn-cta:hover{
   background-color: var(--color-primary-dark);
   transform: scale(1.03);
 }
+
+.small-btn-cta a:hover
+.btn-cta a:hover {
+  color: var(--color-white)
+}
+
+
 
 /* Mobiljustering */
 @media (max-width: 768px) {
@@ -228,17 +237,6 @@ a:hover {
   padding: 20px;
   text-align: left;
 }
-
-/* .youtube-wrapper {
-  width: 85vw;
-  margin: auto;
-  position: relative;
-  padding-top: 56.25%; 
-  margin-top: var(--spacing-lg);
-  margin-bottom: var(--spacing-lg);
-  background-color: var(--color-primary-dark); 
-  justify-content: center;
-} */
 
 .youtube-wrapper {
   width: 85vw;
@@ -284,6 +282,4 @@ a:hover {
 }
 
 
-/* * {
-  outline: 1px solid red;
-} */
+
