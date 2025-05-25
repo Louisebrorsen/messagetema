@@ -20,6 +20,8 @@ Template Name: erhverv Behandling
 
                             </div>
                         </div>
+
+
                         <div class="kontakt-information">
                             <h3><?php echo esc_html(get_field('overskrift2')); ?></h3>
 
@@ -33,6 +35,8 @@ Template Name: erhverv Behandling
                             }
                             ?>
                         </div>
+
+
                     </div>
                 </div>
                 <div class="afsnit2">

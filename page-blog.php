@@ -17,13 +17,12 @@ get_header();
     <?php if ($blog_query->have_posts()) : ?>
         <div class="blog-grid">
             <?php while ($blog_query->have_posts()) : $blog_query->the_post(); ?>
-                <article class="blog-card">
-                    <?php
-                    // Find første billede som eksisterer
-                    $billede = get_field('billede1') ?: get_field('billede2') ?: get_field('billede3') ?: get_field('billede4');
-                    $kort_beskrivelse = get_field('beskrivelse');
-                    ?>
+                <?php
+                $billede = get_field('billede1') ?: get_field('billede2') ?: get_field('billede3') ?: get_field('billede4');
+                $kort_beskrivelse = get_field('beskrivelse');
+                ?>
 
+                <a href="<?php the_permalink(); ?>" class="blog-card">
                     <?php if ($billede): ?>
                         <img src="<?php echo esc_url($billede['url']); ?>" alt="">
                     <?php endif; ?>
@@ -34,12 +33,8 @@ get_header();
                         <p><?php echo wp_kses_post($kort_beskrivelse); ?></p>
                     <?php endif; ?>
 
-
-                    <a class="btn-cta" href="<?php the_permalink(); ?>">
-                        <?php echo esc_html(isset($btn_text) ? $btn_text : 'Læs mere'); ?>
-                    </a>
-
-                </article>
+                    <span class="btn-cta">Læs mere</span>
+                </a>
             <?php endwhile; ?>
             <?php wp_reset_postdata(); ?>
         </div>

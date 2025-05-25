@@ -63,39 +63,39 @@ Template Name: Klinik
                         </div>
 
 
-                        <div class="md-btn-cta">
-                            <a href="https://massage-kropsterapi-fyn.planway.com/" class="cta-btn">Book din tid i dag</a>
-                        </div>
+
+                        <a href="https://massage-kropsterapi-fyn.planway.com/" class="btn-cta">Book din tid i dag</a>
+
                     </div>
 
                 </div>
             </section>
             <div class="video-sektion">
-            <h3><?php echo esc_html(get_field('videotekst')); ?></h3>
-            <?php
-               $youtube_link = get_field('video');
-               
-               if ($youtube_link) :
-                   // Udtræk YouTube-videoens ID fra linket
-                   preg_match('/[\\?\\&]v=([^\\?\\&]+)/', $youtube_link, $matches);
-                   $youtube_id = $matches[1] ?? '';
-               
-                   if ($youtube_id) :
-               ?>
-                       <div class="youtube-wrapper">
-                           <iframe src="https://www.youtube.com/embed/<?php echo esc_attr($youtube_id); ?>"
-                                   title="YouTube video"
-                                   allowfullscreen
-                                   loading="lazy"
-                                   frameborder="0"></iframe>
-                       </div>
-               <?php
-                   else :
-                       echo '<p style="color:red;">Kunne ikke finde YouTube-videoens ID.</p>';
-                   endif;
-               endif;
-               ?>
-               </div>
+                <h3><?php echo esc_html(get_field('videotekst')); ?></h3>
+                <?php
+                $youtube_link = get_field('video');
+
+                if ($youtube_link) :
+                    // Udtræk YouTube-videoens ID fra linket
+                    preg_match('/[\\?\\&]v=([^\\?\\&]+)/', $youtube_link, $matches);
+                    $youtube_id = $matches[1] ?? '';
+
+                    if ($youtube_id) :
+                ?>
+                        <div class="youtube-wrapper">
+                            <iframe src="https://www.youtube.com/embed/<?php echo esc_attr($youtube_id); ?>"
+                                title="YouTube video"
+                                allowfullscreen
+                                loading="lazy"
+                                frameborder="0"></iframe>
+                        </div>
+                <?php
+                    else :
+                        echo '<p style="color:red;">Kunne ikke finde YouTube-videoens ID.</p>';
+                    endif;
+                endif;
+                ?>
+            </div>
         </main>
     </div>
 </div>

@@ -27,7 +27,9 @@ $kontakt_beskrivelse = get_field('kontakt_beskrivelse');
       </div>
 
       <div style="margin: 1rem 0;">
-        <iframe src="https://www.google.com/maps?q=Teglgårdsparken+104,+5500+Middelfart&output=embed" width="100%" height="370" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps?q=Teglgårdsparken+104,+5500+Middelfart&output=embed"
+          width="100%" height="370" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
       </div>
       <div class="b-box-wrapper">
         <div class="b-box">

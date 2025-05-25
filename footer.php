@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="hojre">
-                <img src="http://massagefyn.local/wp-content/uploads/2025/04/DK-kort-footer.png" alt="">
+                <img src="http://massageogkropsterapifyn.dk.linux202.dandomainserver.dk/wp-content/uploads/2025/05/DK-kort-footer-2-scaled.png" alt="">
             </div>
 
         </div>
@@ -94,14 +94,14 @@
 </footer>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const burger = document.querySelector(".burger-menu");
-    const nav = document.querySelector(".main-navigation");
+    document.addEventListener("DOMContentLoaded", function() {
+        const burger = document.querySelector(".burger-menu");
+        const nav = document.querySelector(".main-navigation");
 
-    burger.addEventListener("click", function () {
-      nav.classList.toggle("open");
+        burger.addEventListener("click", function() {
+            nav.classList.toggle("open");
+        });
     });
-  });
 </script>
 
 

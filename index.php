@@ -46,7 +46,7 @@
         // Hent ACF-feltet
         $google_reviews_shortcode = get_field('google_reviews_shortcode');
 
-        // Tjek om der er indhold i feltet
+
         if ($google_reviews_shortcode): ?>
             <div class="google-reviews">
                 <?php echo do_shortcode($google_reviews_shortcode); ?>

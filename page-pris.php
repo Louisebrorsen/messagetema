@@ -44,7 +44,7 @@ get_header(); ?>
 
 
                         <div class="small-btn-cta">
-                            <a href="https://massage-kropsterapi-fyn.planway.com/" >Book din tid i dag</a>
+                            <a href="https://massage-kropsterapi-fyn.planway.com/">Book din tid i dag</a>
                         </div>
                         <?php if ($beskrivelse): ?>
                             <p class="kort-beskrivelse"><?php echo esc_html($beskrivelse); ?></p>
@@ -61,22 +61,22 @@ get_header(); ?>
             endif;
             ?>
         </div>
-        
-        
+
+
         <div class="afsnit2">
-        <div class="blue-box-wrapper2">
-            <div class="blue-box2">
-                <div class="gavekort-sektion">
-                    <h1><?php echo esc_html(get_field('gavekorttitel')); ?> </h1>
-                    <p><?php echo wp_kses_post(get_field('gavekortbeskrivelse', false, false)); ?></p>
-                    <a href="/kontakt" class="btn-cta">Kontakt mig for at høre mere</a>
+            <div class="blue-box-wrapper2">
+                <div class="blue-box2">
+                    <div class="gavekort-sektion">
+                        <h1><?php echo esc_html(get_field('gavekorttitel')); ?> </h1>
+                        <p><?php echo wp_kses_post(get_field('gavekortbeskrivelse', false, false)); ?></p>
+                        <a href="/kontakt" class="btn-cta">Kontakt mig for at høre mere</a>
+                    </div>
                 </div>
             </div>
+
         </div>
-       
-    </div>
-    <div class="text-section" style="margin-top: 6rem;">
-        <?php get_template_part('templates/afbud'); ?>
+        <div class="text-section" style="margin-top: 6rem;">
+            <?php get_template_part('templates/afbud'); ?>
         </div>
 </section>
 
