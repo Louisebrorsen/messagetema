@@ -19,7 +19,7 @@
 
   
   .blog-card img {
-    align-self: center; /* Centrerer billedet horisontalt */
+    align-self: center; 
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -29,7 +29,7 @@
   
   .blog-card h2 {
     text-align: center;
-    min-height: 3em; /* Sørg for samme højde på overskriften */
+    min-height: 3em; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +37,7 @@
   }
   
   .blog-card p {
-    min-height: 3em; /* Gør alle beskrivelser lige høje */
+    min-height: 3em;
     margin-top: var(--spacing-sm);
     display: flex;
     align-items: center;
@@ -45,14 +45,19 @@
   
   
   .blog-card .btn-cta {
-    align-self: center; /* Centrerer knappen horisontalt */
-    margin-top: auto; /* Sørger for at knappen er nederst på kortet */
+    align-self: center; 
+    margin-top: auto; 
   }
   
   .blog-card:hover {
-    background-color: rgba(14, 58, 112, 0.1); /* blå overlay ved hover */  
-    transform: scale(1.03); /* Zoom ind lidt ved hover */
+    background-color: rgba(14, 58, 112, 0.1); 
+    transform: scale(1.02); 
+    color:black;
   }
+
+.blog-card h2:hover{
+  color: #000;
+}
   
   .blog-grid {
     display: grid;

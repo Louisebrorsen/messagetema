@@ -30,7 +30,7 @@
     justify-content: start;
     align-items: flex-start;
     padding: 1.5rem;
-    min-height: 100%; /* Nødvendig til grid */
+    min-height: 100%; 
 }
 
 .priskort h3 {
@@ -44,7 +44,7 @@
     font-size: 0.85rem;
     color: #444;
     font-style: italic;
-    max-width: 270px; /* eller hvad der matcher resten */
+    max-width: 270px; 
     width: 100%;
 }
 
@@ -70,8 +70,8 @@
 
 /* Venstre blå boks */
 .blue-box-wrapper2 {
-    position: relative; /* Holder styr på placeringen */
-    min-height: 150px; /* Sørg for der er lidt højde at arbejde med */
+    position: relative; 
+    min-height: 150px; 
 }
 
 .blue-box2 {
@@ -111,8 +111,8 @@
 
 @media (max-width: 1180px) {
     .blue-box2 {
-        position: static; /* Gør den ikke-absolut, så den flyder med layout */
-        width: 100%; /* Fylder bredden */
+        position: static; 
+        width: 100%;
         padding: 2rem;
         bottom: auto;
         right: auto;

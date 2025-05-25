@@ -1,341 +1,327 @@
-
-
-  /* ================================
-     Footer
-================================ */
-
 .site-footer {
-    background: var(--color-primary-dark);
-    color: var(--color-white); /* Al tekst hvid */
-    margin: auto;
-    place-content: center;
-    
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+  margin: auto;
+  place-content: center;
 }
-
-.site-footer a,
-.site-footer a:visited,
 .site-footer a:hover,
-.site-footer a:active {
-    color: var(--color-white);
-    text-decoration: none;
-    transition: color 0.3s ease;
+.kontakt-item a:hover {
+  color: var(--color-primary);
 }
 
 .site-footer h3 {
-    font-size: 2.75rem;
+  font-size: 2.75rem;
 }
 
 .site-footer h4 {
-    font-size: 1.2rem;
-    font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .site-footer p,
 .site-footer address {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 .site-footer .container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    margin: auto;
-    align-items: first baseline;
-    max-width: 95%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: auto;
+  align-items: first baseline;
+  max-width: 95%;
 }
 
 .footer-kolonne {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-kolonne.footer-venstre,
 .footer-kolonne.footer-hoejre {
-    flex: 0 0 25%;
+  flex: 0 0 25%;
 }
 
 .footer-venstre {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .footer-kolonne.footer-midte {
-    flex: 0 0 50%;
-    display: flex;
-    justify-content: center;
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-kolonne.footer-midte .footer-midte-col {
-    flex: 1 1 48%;
+  flex: 1 1 48%;
 }
 
 .footer-kolonne h3,
 .footer-kolonne h4 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .footer-kolonne ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 1rem 0;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
 }
 
 .footer-kolonne ul li {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.kontaktop{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 10px;
+.kontaktop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10px;
 }
 
 .footer-kolonne .btn {
-    display: inline-block;
-    margin-top: 1rem;
-    background: var(--color-secondary);
-    color: var(--color-white);
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--color-secondary);
+  color: var(--color-white);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 .footer-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: var(--spacing-sm);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-sm);
 }
 
 /* Ekskluder .footer-bottom fra hvid tekst */
 .footer-bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-    font-size: 0.5rem;
-    color: var(--color-grey) !important;
-    padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  font-size: 0.5rem;
+  color: var(--color-grey) !important;
+  padding: 1rem 0;
 }
 
 .footer-bottom p {
-    color: var(--color-grey) !important;
-    font-weight: bold;
-    font-style: italic;
+  color: var(--color-grey) !important;
+  font-weight: bold;
+  font-style: italic;
 }
 
-.midter-samle{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: first baseline;
-    gap: auto;
+.midter-samle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: first baseline;
+  gap: auto;
 }
 
 .midter-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-kolonne.footer-hoejre {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Align hele kolonnen til toppen */
-    gap: 1rem;
-    overflow: visible;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  overflow: visible;
 }
 
 .footer-kolonne.footer-hoejre .venstre {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .footer-kolonne.footer-hoejre .hojre {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-self: flex-end; /* Placer denne kolonne i bunden */
-    margin-top: auto; /* Skubber den ned i forhold til venstre */
-    max-width: 100%;
-    overflow: visible;
-    margin-left: -20rem; /* Justér hvis nødvendigt */
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-end;
+  margin-top: auto;
+  max-width: 100%;
+  overflow: visible;
+  margin-left: -20rem;
 }
 
 .footer-kolonne.footer-hoejre img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-    max-height: 150px;
-    padding-right: 4rem;
-    transform: scale(1.66); /* justere billedets størrelse */
-    margin-top: -6.5rem; /* Juster billedets position fra toppen*/
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  max-height: 150px;
+  padding-right: 4rem;
+  transform: scale(1.66);
+  margin-top: -6.5rem;
 }
 
-
 .site-footer .container {
-    padding: 0;
-  }
+  padding: 0;
+  overflow: hidden;
+}
 
-.site-footer.kontaktliste{
-padding: 0;
-margin: 0;
+.site-footer.kontaktliste {
+  padding: 0;
+  margin: 0;
 }
 
 .footeradresse {
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  .site-footer .container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .footer-kolonne {
+    flex: 1 1 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .footeradresse {
+    flex: 1 1 100%;
+    margin-top: 1rem;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    width: 100%;
+    padding-top: 2rem;
+  }
+
+  .footer-kolonne.footer-midte .kontaktop {
     display: none;
   }
-  
-
-  @media (max-width: 1300px) {
-    .site-footer .container {
-        display: flex
-        ;
-                flex-wrap: nowrap;
-                gap: 2rem;
-                justify-content: space-around;
-                padding: 2rem 1rem;
-                width: 100%;
-                overflow: hidden;
-    }
-  
-    .footer-kolonne {
-      flex: 1 1 calc(50% - 2rem); /* 2 kolonner med spacing */
-      max-width: calc(50% - 2rem);
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-    }
-  
-    .footeradresse {
-      flex: 1 1 100%; /* Fuld bredde på kontaktinfo */
-      margin-top: 1rem;
-    }
-  
-    .footer-bottom {
-      text-align: center;
-      width: 100%;
-      padding-top: 2rem;
-    }
-
-    .footer-kolonne.footer-midte .kontaktop {
-        display: none;
-      }
-      .footer-kolonne.footer-hoejre img {
-        display: none;
-      }
-  
-    /* Hvis du har .footer-hoejre delt op i to (venstre + højre kolonne), så layout dem korrekt */
-    .footer-kolonne.footer-hoejre .højre .venstre{
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 1rem;
-      overflow: hidden;
-    }
-  
-    .footer-kolonne.footer-hoejre .venstre,
-    .footer-kolonne.footer-hoejre .hojre {
-      flex: 1 1 100%;
-      overflow: hidden;
-    }
-  
-    .footer-kolonne.footer-midte .midter-footer {
-      display: flex;
-      flex-direction: column;
-    }
+  .footer-kolonne.footer-hoejre img {
+    display: none;
   }
-  
 
- @media (max-width: 768px) {
-    .site-footer .container {
-      flex-direction: column;
-      align-items: flex-start;
-      text-align: left;
-      gap: 2rem;
-      padding: 2rem 1rem;
-    }
-  
-    .footer-kolonne {
-      width: 100%;
-      max-width: 500px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      text-align: left;
-    }
-  
-    .footer-kolonne.footer-midte .midter-samle,
-    .footer-kolonne.footer-midte .midter-footer,
-    .footer-kolonne.footer-midte .footer-navigation {
-      flex-direction: column;
-      align-items: flex-start;
-      text-align: left;
-    }
-  
-    .footer-kolonne.footer-midte .kontaktop {
-      display: none;
-    }
-  
-    .footer-kolonne.footer-hoejre {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
-      text-align: left;
-    }
-  
-    .footer-kolonne.footer-hoejre .venstre,
-    .footer-kolonne.footer-hoejre .hojre {
-      align-items: flex-start;
-      justify-content: flex-start;
-      text-align: left;
-      margin: 0;
-      width: 100%;
-    }
-  
-    .footer-kolonne.footer-hoejre img {
-      display: none;
-    }
-  
-    .footeradresse {
-      display: block;
-      text-align: left;
-      align-items: flex-start;
-    }
-  
-    .footeradresse .kontakt-info,
-    .footeradresse .kontakt-item {
-      align-items: flex-start;
-      text-align: left;
-    }
-  
-    .footer-bottom {
-      text-align: center;
-      align-items: center;
-      font-size: 0.8rem;
-      padding-top: 2rem;
-    }
+  .footer-kolonne.footer-hoejre .højre .venstre {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    overflow: hidden;
   }
-  
-  
+
+  .footer-kolonne.footer-hoejre .venstre,
+  .footer-kolonne.footer-hoejre .hojre {
+    flex: 1 1 100%;
+    overflow: hidden;
+  }
+
+  .footer-kolonne.footer-midte .midter-footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-footer .container {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .footer-kolonne {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-kolonne.footer-midte .midter-samle,
+  .footer-kolonne.footer-midte .midter-footer,
+  .footer-kolonne.footer-midte .footer-navigation {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-kolonne.footer-midte .kontaktop {
+    display: none;
+  }
+
+  .footer-kolonne.footer-hoejre {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    text-align: left;
+  }
+
+  .footer-kolonne.footer-hoejre .venstre,
+  .footer-kolonne.footer-hoejre .hojre {
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 0;
+    width: 100%;
+  }
+
+  .footer-kolonne.footer-hoejre img {
+    display: none;
+  }
+
+  .footeradresse {
+    display: block;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .footeradresse .kontakt-info,
+  .footeradresse .kontakt-item {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    align-items: center;
+    font-size: 0.8rem;
+    padding-top: 2rem;
+  }
+}
+
 .site-footer *:not(.footer-bottom):not(.footer-bottom *) {
-    color: var(--color-white) !important;
+  color: var(--color-white) !important;
 }
-.site-footer *:not(.footer-bottom, .cta-btn):not(.footer-bottom, .cta-btn *) p, a, .element {
-    font-size: 18px;
+.site-footer *:not(.footer-bottom, .cta-btn):not(.footer-bottom, .cta-btn *) p,
+a,
+.element {
+  font-size: 18px;
 }
 
-.site-footer *:not(.footer-bottom, .cta-btn):not(.footer-bottom, .cta-btn *) p, a, .element {
-    font-size: 18px;
+.site-footer *:not(.footer-bottom, .cta-btn):not(.footer-bottom, .cta-btn *) p,
+a,
+.element {
+  font-size: 18px;
 }

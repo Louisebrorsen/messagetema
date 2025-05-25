@@ -14,3 +14,18 @@
     justify-content: center;
     margin-block: 2rem;    
 }
+
+.video-sektion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 2rem auto;
+}
+
+@media (max-width: 768px) {
+.section2 .left {
+  display: block;
+        justify-content: center;
+        align-items: center;
+}
+}

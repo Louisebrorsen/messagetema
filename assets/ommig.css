@@ -33,7 +33,12 @@
 
 .afsnit1 img {
     width: 100%;
-    max-width: 450px;
+    max-width: 18rem;
     height: auto;
-    
+}
+
+@media (max-width: 768px) {
+    .afsnit1 .right {
+        display: none;
+    }
 }
